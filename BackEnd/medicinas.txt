@@ -1,0 +1,148 @@
+ "Medicines":[
+      {
+    "farmacia": "Farmacia de 158 y 69",
+    "nombre": "Nistatina",
+    "cantidad": 20,
+    "precio": 10
+     },
+    {
+      "farmacia": "Farmacia de 158 y 69",
+      "nombre": "Paracetamol",
+      "cantidad": 1,
+      "precio": 50
+    },
+    {
+      "farmacia": "Farmacia de 158 y 69",
+      "nombre": "Ibuprofeno",
+      "cantidad": 0,
+      "precio": 6
+    },
+    {
+      "farmacia": "Farmacia de Belen",
+      "nombre": "Odansetron",
+      "cantidad": 3,
+      "precio": 10
+    },
+    {
+      "farmacia": "Farmacia de Belen",
+      "nombre": "Citalopram",
+      "cantidad": 1,
+      "precio": 50
+    },
+    {
+
+      "farmacia": "Farmacia de Belen",
+      "nombre": "Migraleve",
+      "cantidad": 0,
+      "precio": 6
+    },
+    
+
+    {
+    
+      "farmacia": "Farmacia Principal de 10 de Octubre",
+      "nombre": "Bluxam",
+      "cantidad": 3,
+      "precio": 10
+    },
+    {
+     
+      "farmacia": "Farmacia Principal de 10 de Octubre",
+      "nombre": "Ozempic",
+      "cantidad": 1,
+      "precio": 50
+    },
+    {
+    
+      "farmacia": "Farmacia Principal de 10 de Octubre",
+      "nombre": "Diazepam",
+      "cantidad": 0,
+      "precio": 6
+    },
+    {
+     
+      "farmacia": "Farmacia La Palma",
+      "nombre": "Adrenalina B.",
+      "cantidad": 3,
+      "precio": 10
+    },
+    {
+     
+      "farmacia": "Farmacia La Palma",
+      "nombre": "Azitromicina",
+      "cantidad": 1,
+      "precio": 50
+    },
+    {
+     
+      "farmacia": "Farmacia La Palma",
+      "nombre": "Sintrom",
+      "cantidad": 0,
+      "precio": 6
+    },
+    
+    {
+      
+      "farmacia": "Farmacia de Dolores",
+      "nombre": "Augmentine",
+      "cantidad": 3,
+      "precio": 10
+    },
+    {
+
+      "farmacia": "Farmacia de Dolores",
+      "nombre": "Buscapina",
+      "cantidad": 1,
+      "precio": 50
+    },
+    {
+  
+      "farmacia": "Farmacia de Dolores",
+      "nombre": "Detam",
+      "cantidad": 0,
+      "precio": 6
+    },
+   
+    {
+  
+      "farmacia": "Farmacia Internacional Comodoro",
+      "nombre": "Ivergalen",
+      "cantidad": 3,
+      "precio": 10
+    },
+    {
+
+      "farmacia": "Farmacia Internacional Comodoro",
+      "nombre": "Salbutamol",
+      "cantidad": 1,
+      "precio": 50
+    },
+    {
+    
+      "farmacia": "Farmacia Internacional Comodoro",
+      "nombre": "Aceclofenaco",
+      "cantidad": 0,
+      "precio": 6
+    }
+  ]
+
+
+
+   {
+      "farmacia": "1",
+      "nombre": "amoxicilina",
+      "cantidad": 0,
+      "precio": 6
+    },
+    {
+      "farmacia": "1",
+      "nombre": "paracetamol",
+      "cantidad": 10,
+      "precio": 60
+    },
+    {
+      "farmacia": "2",
+      "nombre": "paracetamol",
+      "cantidad": 10,
+      "precio": 60
+    },

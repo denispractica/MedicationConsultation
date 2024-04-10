@@ -1,0 +1,19 @@
+.mapContainer {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 8vh;
+  background: white;
+}
+.leaflet-routing-container {
+  display: none;
+}
+.mapLink {
+  color: black !important;
+  text-decoration: none;
+}
+
+.MuiAutocomplete-root .Mui-focused {
+  outline: none;
+  border: none;
+}
