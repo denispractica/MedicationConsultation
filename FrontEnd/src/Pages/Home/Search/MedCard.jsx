@@ -57,6 +57,8 @@ const MedCard = ({
             alignItems: "center",
           }}>
           <p>
+            <strong>Nombre</strong> {` — ${nombre}`}
+            <br />
             Precio — {` ${precioDeVenta}cup`}
             <br />
             Venta {` — ${tipoDeVenta}`}

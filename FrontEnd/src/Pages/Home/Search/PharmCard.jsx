@@ -39,6 +39,8 @@ const PharmCard = ({
             alignItems: "center",
           }}>
           <p>
+            <strong>Nombre</strong> {` — ${nombre}`}
+            <br />
             Provincia{` — ${provincia}`}
             <br />
             Municipio {` — ${municipio}`}
