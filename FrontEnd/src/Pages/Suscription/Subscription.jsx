@@ -45,7 +45,7 @@ const Subscription = ({ setSubs }) => {
     });
 
     try {
-      const rp = await axios.post("http://190.15.158.62:5001/verifySuscription", {
+      const rp = await axios.post("https://backmedicationconsultation.t3sd.nat.cu/verifySuscription", {
         email: data.email,
       });
       if (rp.data.Error) {
@@ -77,7 +77,7 @@ const Subscription = ({ setSubs }) => {
     if (codeValidate.trim() === "") return;
 
     await axios
-      .post("http://190.15.158.62:5001/activeCode", {
+      .post("https://backmedicationconsultation.t3sd.nat.cu/activeCode", {
         ...rq,
         code: codeValidate,
       })
@@ -106,7 +106,7 @@ const Subscription = ({ setSubs }) => {
     });
 
     await axios
-      .post("http://190.15.158.62:5001/verifySuscriptionUpdate", {
+      .post("https://backmedicationconsultation.t3sd.nat.cu/verifySuscriptionUpdate", {
         email: data.email,
       })
       .then((r) => {
@@ -136,7 +136,7 @@ const Subscription = ({ setSubs }) => {
     if (codeValidate.trim() === "") return;
 
     await axios
-      .post("http://190.15.158.62:5001/activeCodeUpdate", {
+      .post("https://backmedicationconsultation.t3sd.nat.cu/activeCodeUpdate", {
         ...rq,
         code: codeValidate,
       })
@@ -174,7 +174,7 @@ const Subscription = ({ setSubs }) => {
     };
 
     try {
-      const rp = await axios.post("http://190.15.158.62:5001/postUpdate", rqUpdate);
+      const rp = await axios.post("https://backmedicationconsultation.t3sd.nat.cu/postUpdate", rqUpdate);
       if (rp.data.Error) {
         setResponse(rp.data.response);
         setTimeout(() => {
@@ -199,14 +199,14 @@ const Subscription = ({ setSubs }) => {
 
   const getPharmacy = async () => {
     await axios
-      .get("http://190.15.158.62:5001/getPharmacy")
+      .get("https://backmedicationconsultation.t3sd.nat.cu/getPharmacy")
       .then((r) => setPharmacy(r.data.farmacias))
       .catch((e) => console.log("Algo salió mal", e));
   };
 
   const getMedicines = async () => {
     await axios
-      .get("http://190.15.158.62:5001/getMedicines")
+      .get("https://backmedicationconsultation.t3sd.nat.cu/getMedicines")
       .then((r) => setMedicines(r.data.medicamentos))
       .catch((e) => console.log("Algo salió mal", e));
   };

@@ -64,7 +64,7 @@ const Search = () => {
   };
   const getMedicines = async () => {
     await axios
-      .get(`http://190.15.158.62:5001/getSearch/?search=${search}`)
+      .get(`https://backmedicationconsultation.t3sd.nat.cu/getSearch/?search=${search}`)
       .then((r) => {
         setMedicines(r.data.search);
         setLoading(false);

@@ -47,7 +47,7 @@ const Map = ({ newLocation }) => {
 
   const getPharmacy = async () => {
     await axios
-      .get("http://190.15.158.62:5001/getPharmacy")
+      .get("https://backmedicationconsultation.t3sd.nat.cu/getPharmacy")
       .then(async (r) => {
         await setArrayIcons(paintFarms(r.data.farmacias));
       })

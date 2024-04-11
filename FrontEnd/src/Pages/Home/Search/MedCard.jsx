@@ -24,7 +24,7 @@ const MedCard = ({
     setLoading(true);
     setActiveCard(id);
     await axios
-      .get(`http://190.15.158.62:5001/getPharmacyForMedicine/${id}`)
+      .get(`https://backmedicationconsultation.t3sd.nat.cu/getPharmacyForMedicine/${id}`)
       .then((r) => {
         setPharmacyFound(r.data.idMedicamentoFarmacias);
         setLoading(false);
