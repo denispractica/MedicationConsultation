@@ -3,7 +3,7 @@ const axios = require("axios");
 
 const savePharmacy = async () => {
   await axios
-    .get("https://localhost:5001/getPharmacy")
+    .get("http://localhost:5001/getPharmacy")
     .then(async (r) => {
       const pharmacy = r.data.farmacias.map((f) => {
         return { id: f.id, idMedicamentos: f.idMedicamentos };

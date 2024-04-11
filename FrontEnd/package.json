@@ -2,7 +2,7 @@
   "name": "medicationConsultation",
   "version": "1.1.0",
   "private": true,
-  "homepage": "http://medicationconsultation.t3sd.nat.cu/",
+  "homepage": "https://medicationconsultation.t3sd.nat.cu/",
   "dependencies": {
     "@emotion/react": "11.11.1",
     "@emotion/styled": "11.11.0",

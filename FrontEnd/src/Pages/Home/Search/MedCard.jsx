@@ -24,7 +24,7 @@ const MedCard = ({
     setLoading(true);
     setActiveCard(id);
     await axios
-      .get(`https://190.15.158.62:5001/getPharmacyForMedicine/${id}`)
+      .get(`http://190.15.158.62:5001/getPharmacyForMedicine/${id}`)
       .then((r) => {
         setPharmacyFound(r.data.idMedicamentoFarmacias);
         setLoading(false);

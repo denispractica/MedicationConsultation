@@ -45,7 +45,7 @@ const Subscription = ({ setSubs }) => {
     });
 
     try {
-      const rp = await axios.post("https://190.15.158.62:5001/verifySuscription", {
+      const rp = await axios.post("http://190.15.158.62:5001/verifySuscription", {
         email: data.email,
       });
       if (rp.data.Error) {
@@ -77,7 +77,7 @@ const Subscription = ({ setSubs }) => {
     if (codeValidate.trim() === "") return;
 
     await axios
-      .post("https://190.15.158.62:5001/activeCode", {
+      .post("http://190.15.158.62:5001/activeCode", {
         ...rq,
         code: codeValidate,
       })
@@ -106,7 +106,7 @@ const Subscription = ({ setSubs }) => {
     });
 
     await axios
-      .post("https://190.15.158.62:5001/verifySuscriptionUpdate", {
+      .post("http://190.15.158.62:5001/verifySuscriptionUpdate", {
         email: data.email,
       })
       .then((r) => {
@@ -136,7 +136,7 @@ const Subscription = ({ setSubs }) => {
     if (codeValidate.trim() === "") return;
 
     await axios
-      .post("https://190.15.158.62:5001/activeCodeUpdate", {
+      .post("http://190.15.158.62:5001/activeCodeUpdate", {
         ...rq,
         code: codeValidate,
       })
@@ -174,7 +174,7 @@ const Subscription = ({ setSubs }) => {
     };
 
     try {
-      const rp = await axios.post("https://190.15.158.62:5001/postUpdate", rqUpdate);
+      const rp = await axios.post("http://190.15.158.62:5001/postUpdate", rqUpdate);
       if (rp.data.Error) {
         setResponse(rp.data.response);
         setTimeout(() => {
@@ -199,14 +199,14 @@ const Subscription = ({ setSubs }) => {
 
   const getPharmacy = async () => {
     await axios
-      .get("https://190.15.158.62:5001/getPharmacy")
+      .get("http://190.15.158.62:5001/getPharmacy")
       .then((r) => setPharmacy(r.data.farmacias))
       .catch((e) => console.log("Algo salió mal", e));
   };
 
   const getMedicines = async () => {
     await axios
-      .get("https://190.15.158.62:5001/getMedicines")
+      .get("http://190.15.158.62:5001/getMedicines")
       .then((r) => setMedicines(r.data.medicamentos))
       .catch((e) => console.log("Algo salió mal", e));
   };

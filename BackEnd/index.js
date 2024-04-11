@@ -28,7 +28,7 @@ app.set("port", process.env.PORT || 5001);
 app.set("data", generaDatos());
 app.use(morgan("dev"));
 app.listen(app.get("port"), () => {
-  console.log(`App activa en https://localhost:${app.get("port")}`);
+  console.log(`App activa en http://localhost:${app.get("port")}`);
 });
 
 

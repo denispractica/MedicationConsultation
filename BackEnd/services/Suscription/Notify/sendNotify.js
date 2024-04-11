@@ -9,7 +9,7 @@ const returnName = (array, id) => {
 const notifyUsers = async (newEntrance, farmacias) => {
   let notify = "";
   const medicines = await axios
-    .get("https://localhost:5001/getMedicines")
+    .get("http://localhost:5001/getMedicines")
     .then((r) => r.data.medicamentos)
     .catch((e) => console.log("Algo Salió mal", e));
 

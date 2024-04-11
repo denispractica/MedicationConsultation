@@ -4,11 +4,11 @@ const getSearch = async (search, rp) => {
   let searchResponse = [];
 
   const medicamentos = await axios
-    .get("https://localhost:5001/getMedicines")
+    .get("http://localhost:5001/getMedicines")
     .then((r) => r)
     .catch((e) => console.log("Algo salió mal", e));
   const farmacias = await axios
-    .get("https://localhost:5001/getPharmacy")
+    .get("http://localhost:5001/getPharmacy")
     .then((r) => r)
     .catch((e) => console.log("Algo salió mal", e));
 
