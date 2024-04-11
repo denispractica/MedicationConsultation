@@ -9,7 +9,7 @@ const returnName = (array, id) => {
 const notifyUsers = async (newEntrance, farmacias) => {
   let notify = "";
   const medicines = await axios
-    .get("http://localhost:5001/getMedicines")
+    .get("https://localhost:5001/getMedicines")
     .then((r) => r.data.medicamentos)
     .catch((e) => console.log("Algo Salió mal", e));
 
@@ -66,7 +66,7 @@ const sendNotifys = async (notify, email) => {
     html: `<p>Hola,</p> <p>Ya tienes disponible los siguientes medicamentos:</p>
       ${notify}
         <p>Saludos,</p><p>Plataforma Nacional de Consulta de Medicamentos </p>
-        <p>Para dejar de recibir notificaciones <a href="http://localhost:3000/unsubscribe/${id}">haga click aqui</a></p>`,
+        <p>Para dejar de recibir notificaciones <a href="https://medicationconsultation.t3sd.nat.cu/unsubscribe/${id}">haga click aqui</a></p>`,
   };
 
   await trasporter

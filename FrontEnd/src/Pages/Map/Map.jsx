@@ -47,7 +47,7 @@ const Map = ({ newLocation }) => {
 
   const getPharmacy = async () => {
     await axios
-      .get("http://190.15.158.62:5001/getPharmacy")
+      .get("https://190.15.158.62:5001/getPharmacy")
       .then(async (r) => {
         await setArrayIcons(paintFarms(r.data.farmacias));
       })
@@ -143,7 +143,7 @@ const Map = ({ newLocation }) => {
           <LayersControl.BaseLayer checked name="OSM">
             <LayerGroup>
               <TileLayer
-                url={"http://tile.openstreetmap.org/{z}/{x}/{y}.png"}
+                url={"https://tile.openstreetmap.org/{z}/{x}/{y}.png"}
               />
               ;
             </LayerGroup>
@@ -151,7 +151,7 @@ const Map = ({ newLocation }) => {
           <LayersControl.BaseLayer name="Híbrido">
             <LayerGroup>
               <TileLayer
-                url={"http://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}"}
+                url={"https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}"}
               />
               ;
             </LayerGroup>
@@ -160,7 +160,7 @@ const Map = ({ newLocation }) => {
             <LayerGroup>
               <TileLayer
                 url={
-                  "http://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}"
+                  "https://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}"
                 }
               />
               ;

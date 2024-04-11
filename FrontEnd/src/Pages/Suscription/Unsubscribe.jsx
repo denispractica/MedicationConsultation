@@ -7,7 +7,7 @@ const Unsubscribe = () => {
   const [response, setResponse] = useState("");
   const unsubscribe = async () => {
     await axios
-      .delete(`http://190.15.158.62:5001/deleteSuscription/${id}`)
+      .delete(`https://190.15.158.62:5001/deleteSuscription/${id}`)
       .then((r) => setResponse(r.data.response))
       .catch((e) => console.log("Algo salió mal", e));
   };

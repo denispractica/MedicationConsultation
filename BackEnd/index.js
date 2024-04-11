@@ -28,8 +28,10 @@ app.set("port", process.env.PORT || 5001);
 app.set("data", generaDatos());
 app.use(morgan("dev"));
 app.listen(app.get("port"), () => {
-  console.log(`App activa en http://localhost:${app.get("port")}`);
+  console.log(`App activa en https://localhost:${app.get("port")}`);
 });
+
+
 app.use(
   cors({
     origin: "*",
@@ -99,7 +101,7 @@ app.get("/getSuscribeUsers", (rq, rp) => {
 //     await savePharmacy();
 //   } else {
 //     await axios
-//       .get("http://localhost:5001/getPharmacy")
+//       .get("https://localhost:5001/getPharmacy")
 //       .then(async (r) => {
 //         const newDataBasePharmacy = r.data.farmacias.map((f) => {
 //           return {

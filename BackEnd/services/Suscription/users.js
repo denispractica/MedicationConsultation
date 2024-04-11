@@ -52,11 +52,11 @@ const check = async (user) => {
   const oldUser = await dataBase.find({ email: user.email });
 
   const pharmacy = await axios
-    .get("http://localhost:5001/getPharmacy")
+    .get("https://localhost:5001/getPharmacy")
     .then((r) => r.data.farmacias)
     .catch((e) => console.log("Algo salió mal", e));
   const medicine = await axios
-    .get("http://localhost:5001/getMedicines")
+    .get("https://localhost:5001/getMedicines")
     .then((r) => r.data.medicamentos)
     .catch((e) => console.log("Algo salió mal", e));
   let actualPharmacy = [];
